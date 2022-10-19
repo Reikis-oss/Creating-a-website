@@ -208,10 +208,12 @@ nav{
 
 .cases_explanation_item1{
     float: left;
+    width: 330px;
 }
 
 .cases_explanation_item2{
-    padding-left: 200px;
+    margin-left: 200px;
+    width: 990px
 }
 
 .cases_explanation input{
@@ -264,6 +266,13 @@ nav{
 
 .calculator_footer p{
     margin: 25px 25px 25px 0px;
+}
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
 }
 
 .statistics{
