@@ -278,7 +278,7 @@ nav{
 .statistics{
     max-height: 400px;
     max-width: 1400px;
-    margin: auto;
+    padding: auto;
     background: url(../img/bg3.jpg) 70% 20% no-repeat;
 }
 
@@ -322,6 +322,7 @@ nav{
     max-height: 450px;
     max-width: 750px;
     margin: auto;
+    padding-bottom: 60px;
 }
 .reviews h2{
    margin-top: 150px;
@@ -352,14 +353,14 @@ nav{
 
 .contacts{
     max-width: 100%;
-    max-height: 1200px;
-    margin: auto;
+    max-height: 1000px;
+    padding: auto;
     background: url(../img/bg4.jpg) center/cover no-repeat;
     color: #fff;
 }
 
 .contacts h2{
-   margin-top: 150px;
+    padding-top: 100px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -424,10 +425,6 @@ nav{
     margin-left: 35%;
 }
 
-.contacts img{
-    max-width: 100%;
-}
-
 #contacts_img1{
     margin-left: 30%;
 }
@@ -435,4 +432,9 @@ nav{
 .contacts a>img{
     margin-top: 20px;
     margin-left: 60px;
+    padding-bottom: 60px;
+}
+
+.maps img{
+    max-width: 100%;
 }
