@@ -84,14 +84,13 @@ nav{
 
 .about_me{
     max-width: 750px;
-    max-height: 550px;
+    max-height: 100%;
     margin: auto;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 100px 0px;
+    
 }
 
 .about_me h2{
-    margin-top: 100px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -131,13 +130,14 @@ nav{
 }
 
 .skills{
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 100px 0px;
+    max-width: 1200px;
+    max-height: 100%;
+    margin: auto;
 }
 
 .skills h2
 {
-    margin-top: 150px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -173,13 +173,14 @@ nav{
 }
 
 .cases{
-    padding-bottom: 30px;
-    padding-top: 30px;
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: auto;
+    padding: 100px 0px;
 }
 
 .cases h2
 {
-    margin-top: 150px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -244,14 +245,12 @@ nav{
 
 .Calculation_cost{
     max-width: 900px;
-    max-height: 700px;
+    max-height: 1200px;
     margin: auto;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 100px 0px;
 }
 
 .Calculation_cost h2{
-    margin-top: 150px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -295,14 +294,14 @@ nav{
 }
 
 .statistics{
-    max-height: 400px;
-    max-width: 1400px;
-    padding: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: auto;
+    padding: 100px 0px;
     background: url(../img/bg3.jpg) 70% 20% no-repeat;
 }
 
 .statistics h2{
-    margin-top: 150px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -338,13 +337,12 @@ nav{
 }
 
 .reviews {
-    max-height: 450px;
-    max-width: 750px;
+    max-width: 1200px;
+    max-height: 1200px;
     margin: auto;
-    padding-bottom: 90px;
+    padding: 100px 0px;
 }
 .reviews h2{
-   margin-top: 150px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -372,15 +370,14 @@ nav{
 
 .contacts{
     max-width: 100%;
-    max-height: 1000px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    max-height: 1200px;
+    margin: auto;
+    padding: 100px 0px;
     background: url(../img/bg4.jpg) center/cover no-repeat;
     color: #fff;
 }
 
 .contacts h2{
-    padding-top: 100px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -450,9 +447,7 @@ nav{
 }
 
 .contacts a>img{
-    margin-top: 20px;
-    margin-left: 60px;
-    padding-bottom: 60px;
+    margin: 20px 30px;
 }
 
 .maps img{
