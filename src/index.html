@@ -24,16 +24,16 @@
         </nav>
     </header>
     
-    
-    <div class="main">
+    <main>
+    <section class="main">
        <div class="title__container">
             <h1>Привет <br>Я Андрей Браун </h1>
             <h4>Фулл стек веб-разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
-    </div>
-    
+    </section>
+    </main>
     <div class="about_me">
         <h2>Обо мне</h2>
         <hr>
@@ -165,10 +165,10 @@
        </div>
        
        <div class="reviews">
-           <h2>Отзывы</h2>
+        <h2>Отзывы</h2>
            <hr>
            <img src="img/mihail.png" alt="">
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque similique, esse facilis. Harum qui, voluptatibus tenetur itaque corporis dolorem sequi laboriosam repellendus optio delectus ipsam consequuntur error officia libero accusamus!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae officia dolorum, iure voluptatum rerum eum sit culpa velit consectetur explicabo.</p>
            <p><br> <b>Михаил</b>, Ген директор ПАО "Газпром".</p>
        </div>
        
@@ -192,22 +192,23 @@
                <div class="clear"></div>
                <p>Оставьте мне сообщение</p>
             </div>
-              
+              <form action="#">
               <div class="feedback">
                   <div class="feedback_item">
-                      <input type="text" placeholder="Имя">
+                      <input type="text" placeholder="Имя" required>
                   </div>
                    <div class="feedback_item">
-                       <input type="text" placeholder="Email">
+                       <input type="text" placeholder="Email" required>
                    </div>
                
                <div class="feedback_item">
-                  <textarea name="messages" id="1" cols="40" rows="3" placeholder="Сообщение"></textarea>
+                  <textarea name="messages" id="1" cols="40" rows="3" placeholder="Сообщение" required></textarea>
                </div>
                <div class="feedback_item_sub" >
                      <input type="submit" value="Отправить">
                </div>
                </div>
+               </form>
     
            <div class="clear"></div>
            <a href="#" id="contacts_img1"><img src="img/fb.png" alt=""></a>
@@ -221,6 +222,13 @@
     <div class="maps">
         <img src="img\map.png" alt="">
     </div>
+       
+    <div class="footer">
+        <div class="footer_container">
+            <p>Copyright 2021 Андрей Браун. Design by Web</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
