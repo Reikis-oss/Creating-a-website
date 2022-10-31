@@ -13,6 +13,7 @@ nav{
     position: fixed;
 }
 
+
 .logo{
     float: left;
     color: #fff;
@@ -22,6 +23,15 @@ nav{
     -webkit-animation: coming ease 2s;
     -o-animation: coming ease 2s;
     animation: coming ease 2s;
+}
+
+@keyframes coming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .menu{
@@ -41,6 +51,17 @@ nav{
     -o-animation: topshift 0.4s ease forwards;
     animation: topshift 0.4s ease forwards;
     opacity: 0;
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px; 
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 
 .menu li a{
@@ -63,6 +84,23 @@ nav{
     transform: scale(1.1);
 }
 
+.menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
+
 main{
     width: 100%;
     height: 100%;
@@ -70,23 +108,46 @@ main{
 }
 
 .main{
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding: 60px 0px;
     width: 100%;
     height: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
+
 .title__container{
     float: left;
     margin: 250px 0px 0px 310px;
     color: #2c384a;
-    text-align: center;    
-    -webkit-animation: titlemove 1s ease;
-    -o-animation: titlemove 1s ease; 
-    animation: titlemove 1s ease;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards; 
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s; 
   
 }
 
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px; 
+    }
+    to{
+        opacity: 1;
+        margin-left: 310px;
+    }
+}
+
+@keyframes whiteblack{
+    from{
+        opacity: 0;      
+    }
+    to{
+        opacity: 1;
+    }
+} 
 
 .title__container h1{
     font-size: 30px;
@@ -112,8 +173,18 @@ main{
     font-size: 10px;
     cursor: pointer;
     margin: 30px 14px 0px 14px;
+    transition: all 0.2s;
+    transform: scale(1); 
 }
 
+.title__container input:hover{
+    background:  #344051;  
+    color: white;
+}
+
+.title__container input:active{
+    transform: scale(1.1)
+}
 .about_me{
     max-width: 750px;
     max-height: 100%;
@@ -159,13 +230,22 @@ main{
     width: 140px;
     height: 30px;
     background: url(../img/input.png) 5% no-repeat;
+    transform: scale(1);
 }
+.about_me input:active{
+    transform: scale(1.1);
+    color: #ec9829;
+}
+
 
 .skills{
     padding: 100px 0px;
     max-width: 1200px;
     max-height: 100%;
     margin: auto;
+    -webkit-animation: whiteblack 2s;
+    -o-animation: whiteblack 2s;
+    animation: whiteblack 2s;
 }
 
 .skills h2
@@ -197,7 +277,7 @@ main{
     float: left;
     width: 210px;
     padding-top: 30px;
-    text-align: center;
+    text-align: center;    
 }
 
 #skills_item1{
@@ -254,6 +334,14 @@ main{
     padding: 5px;
 }
 
+.cases_explanation p a:hover{
+    color: #ec9829;
+}
+
+.cases_explanation p a:active{
+    color: blue;
+}
+
 .cases_explanation_item1{
     float: left;
     width: 330px;
@@ -265,7 +353,7 @@ main{
 }
 
 .cases_explanation input{
-   background: #63b5ae;
+    background: #63b5ae;
     color: #fff;
     min-width: 200px;
     min-height: 40px;
@@ -273,6 +361,12 @@ main{
     cursor: pointer;
     border: 0px solid #6d7682;
     border-radius: 5px;
+    transform: scale(1);
+}
+
+.cases_explanation input:active{
+    transform: scale(1.1);
+    background: #4C8C88;
 }
 
 .Calculation_cost{
@@ -304,6 +398,10 @@ main{
     color: #737373;
 }
 
+.mySelect:hover{
+    color: black;
+}
+
 .Calculation_cost hr{
     height: 1px;
     border: none;
@@ -330,8 +428,12 @@ main{
     max-height: 1200px;
     margin: auto;
     padding: 100px 0px;
-    background: url(../img/bg3.jpg) 70% 20% no-repeat;
+    background: url(../img/bg3.jpg) 70% 20% fixed no-repeat;
+    -webkit-animation: whiteblack 2s;
+    -o-animation: whiteblack 2s;
+    animation: whiteblack 2s;
 }
+
 
 .statistics h2{
     text-align: center;
@@ -429,7 +531,7 @@ main{
     margin: 15px auto;
 }
 
-.contacts>p{
+.contacts p{
     text-align: center;
 }
 
@@ -441,21 +543,23 @@ main{
 }
 
 #contacts_container_item1{
-    margin-left: 30%;
-}
-.contacts_container>p{
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
+    margin-left: 25%;
 }
 
 .feedback{
     max-width: 50%;
     max-height: 1200px;
     margin: auto;
+    padding: 30px 0px;
 }
 
+.feedback p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
 .feedback_item input{
     float: left;
     width: 40%;
@@ -476,14 +580,30 @@ main{
     border: 0px solid #6d7682;
     border-radius: 5px;
     margin-left: 35%;
+    transform: scale(1);
+    color: #b8b8b8;
+}
+
+.feedback_item_sub input:active{
+    transform: scale(1.1);
+    background: #b8b8b8;
+}
+
+.feedback_item_sub input:hover{
+    color: black;
 }
 
 #contacts_img1{
     margin-left: 30%;
 }
 
-.contacts a>img{
+.contacts a img{
     margin: 20px 30px;
+    transform: scale(1);
+}
+
+.contacts a img:hover{
+    transform: scale(1.2);
 }
 
 .maps img{
@@ -502,64 +622,8 @@ main{
     color: white;
 }
 
-.title__container input{
-    transition: all 0.2s;
-    transform: scale(1); 
-}
 
-.title__container input:hover{
-    background:  #344051;  
-    color: white;
-}
 
-.title__container input:active{
-    transform: scale(1.1)
-}
 
-@keyframes coming{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
 
-@keyframes topshift{
-    from{
-        opacity: 0;
-        margin-top -80px: 
-    }
-    to{
-        opacity: 1;
-        margin-top: 0px;
-    }
-}
 
-.menu li:nth-child(2){
-    animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3){
-    animation-delay: 0.8s;
-}
-.menu li:nth-child(4){
-    animation-delay: 1.2s;
-}
-.menu li:nth-child(5){
-    animation-delay: 1.6s;
-}
-.menu li:nth-child(6){
-    animation-delay: 2s;
-}
-
- @keyframes titlemove{
-    from{
-        opacity: 0;
-        margin-left: -400px: 
-    }
-    to{
-        opacity: 1;
-        margin-left: 350px;
-    }
-}
